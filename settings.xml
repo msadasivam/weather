@@ -28,13 +28,13 @@
   <servers>
     <server>
       <id>apigee-cs-libs-release</id>
-      <username></username>
-      <password></password>
+      <username>${env.APIGEE_ARTIFACTORY_USER}</username>
+      <password>${env.APIGEE_ARTIFACTORY_PASSWORD}</password>
     </server>
     <server>
       <id>apigee-cs-plugins-release</id>
-      <username></username>
-      <password></password>
+      <username>${env.APIGEE_ARTIFACTORY_USER}</username>
+      <password>${env.APIGEE_ARTIFACTORY_PASSWORD}</password>
     </server>
   </servers>
   <activeProfiles>

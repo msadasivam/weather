@@ -1,4 +1,10 @@
 language: node_js
 node_js:
-  - "0.10"
-script: mvn apigee-enterprise:deploy -P test -Dusername= -Dpassword=
+- '0.10'
+script: mvn apigee-enterprise:deploy --settings=settings.xml -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
+env:
+  global:
+  - secure: vyff232NQ6JicXDjc3+kAqMGRXqsfUaNgGCW7Q+3pJenV4XKWRDjIuZokpJuQSDqTOancXSltkAEem8Mf7bD8NQ185uVoW6wIuzycuRXkXaEbvUKXqrH+XABTJy7HJsHx16z54TK7ZvRgUwodC0KALNkCgMRPQ144u5sl6oE4No=
+  - secure: HY0Fl4UgMj4oXd0c/Z1tLQn+HEBxLeYE/Q2wJNRD6Jznp4yldNeswDzHOLsYJKNJol609Ag/et/G5iE6e00oVWpBAzjvpZx/nG8Aq6rmwW25VPZADIpjOWkvvsW1mlnr8LUdBitoaT9ZjblsKYFCagq0D4nDChlxl6DZSXHsmNY=
+  - secure: 4Vx9NQtVxzNjMSuLrztraPZd5dG6/rnbAGZtMZrq/gJs2MUBlAIQ4Zt9XReyNP5VmblkxxsJ4RxekJ1MbpgLePAeXVG2yO94ebnV7Ty+p96/4vnWYNLIgNe5+BxTqJreYXyjwsiy8UDuTf1bTioAyHQEtIMN3VdphPRncvErp7I=
+  - secure: QI/CB7OPVr1s4mNdhf53OJLzRVvq1f2EnYVOLPQwuHzlD4TkhaABLGF0JWlLhPfnyABsyXmi+OUgoT7oSlWUjrdt9kWtmu0nVfPCdm7rwTjibS8e/EfKnppqZLjGCl1nKwFLtZELOHnx7Rq06BGfCOl83jyN/kcjAaAYJMZYaJw=
