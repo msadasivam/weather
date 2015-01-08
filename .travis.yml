@@ -3,6 +3,9 @@ node_js:
 - '0.10'
 script: mvn apigee-enterprise:deploy --settings=settings.xml -X -P test -Dusername=${ORG_USER}
   -Dpassword=${ORG_PASSWORD}
+branches:
+  only:
+    - master
 env:
   global:
   - secure: UFxNZ0XVCR+anP+5hk0hWH1cj3b/EmkhyONZXZRiBhMIDygMXrfRzjOS+nwOnPoRgOZsFacOEdayplzfR7SOvSQONwiywPBTor09PKOMkTD57zImEDBFmQHI2LsjjZowf3nCz5SseHrXFkzSUsNTcIiqFGnptmaSw3QBwETU2TE=

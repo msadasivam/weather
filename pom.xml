@@ -8,8 +8,8 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>Woolworths</groupId>
-	<artifactId>olympic</artifactId>
+	<artifactId>weathercitest</artifactId>
 	<version>1.0</version>
-	<name>olympic</name>
+	<name>weathercitest</name>
 	<packaging>pom</packaging>
 </project>
