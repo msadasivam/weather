@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '0.10'
-script: mvn apigee-enterprise:deploy --settings=settings.xml -X -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
+script: "mvn apigee-enterprise:deploy --settings=./settings.xml -X -P test -Dusername=${ORG_USER} -Dpassword='${ORG_PASSWORD}'"
 env:
   global:
   - secure: vyff232NQ6JicXDjc3+kAqMGRXqsfUaNgGCW7Q+3pJenV4XKWRDjIuZokpJuQSDqTOancXSltkAEem8Mf7bD8NQ185uVoW6wIuzycuRXkXaEbvUKXqrH+XABTJy7HJsHx16z54TK7ZvRgUwodC0KALNkCgMRPQ144u5sl6oE4No=
