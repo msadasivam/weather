@@ -1,10 +1,11 @@
 language: node_js
 node_js:
 - '0.10'
-script: "mvn apigee-enterprise:deploy --settings=settings.xml -X -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}"
+script: mvn apigee-enterprise:deploy --settings=settings.xml -X -P test -Dusername=${ORG_USER}
+  -Dpassword=${ORG_PASSWORD}
 env:
   global:
-  - secure: vyff232NQ6JicXDjc3+kAqMGRXqsfUaNgGCW7Q+3pJenV4XKWRDjIuZokpJuQSDqTOancXSltkAEem8Mf7bD8NQ185uVoW6wIuzycuRXkXaEbvUKXqrH+XABTJy7HJsHx16z54TK7ZvRgUwodC0KALNkCgMRPQ144u5sl6oE4No=
-  - secure: HY0Fl4UgMj4oXd0c/Z1tLQn+HEBxLeYE/Q2wJNRD6Jznp4yldNeswDzHOLsYJKNJol609Ag/et/G5iE6e00oVWpBAzjvpZx/nG8Aq6rmwW25VPZADIpjOWkvvsW1mlnr8LUdBitoaT9ZjblsKYFCagq0D4nDChlxl6DZSXHsmNY=
-  - secure: 4Vx9NQtVxzNjMSuLrztraPZd5dG6/rnbAGZtMZrq/gJs2MUBlAIQ4Zt9XReyNP5VmblkxxsJ4RxekJ1MbpgLePAeXVG2yO94ebnV7Ty+p96/4vnWYNLIgNe5+BxTqJreYXyjwsiy8UDuTf1bTioAyHQEtIMN3VdphPRncvErp7I=
-  - secure: QI/CB7OPVr1s4mNdhf53OJLzRVvq1f2EnYVOLPQwuHzlD4TkhaABLGF0JWlLhPfnyABsyXmi+OUgoT7oSlWUjrdt9kWtmu0nVfPCdm7rwTjibS8e/EfKnppqZLjGCl1nKwFLtZELOHnx7Rq06BGfCOl83jyN/kcjAaAYJMZYaJw=
+  - secure: UFxNZ0XVCR+anP+5hk0hWH1cj3b/EmkhyONZXZRiBhMIDygMXrfRzjOS+nwOnPoRgOZsFacOEdayplzfR7SOvSQONwiywPBTor09PKOMkTD57zImEDBFmQHI2LsjjZowf3nCz5SseHrXFkzSUsNTcIiqFGnptmaSw3QBwETU2TE=
+  - secure: fwYqVFQipayp9LYAZwTQ/PDKK2hvNIZfXnGmGi9Ey85k1CTkU8WFddIBldHrTjaD9jjrSB6WFpfyBQE438U/PgKCUVKQmqJTbyGAWGalosXNOLB/fXvapfyb2ncBo9d96xdkoQfyCyshGhrO28Vi4a8gmoetDM4CRrJX4diqAMc=
+  - secure: kYAnXH5nQ1LKeWaFSE1uxMwpY41U2aknXhXLyYRsmqmk2r8BlmkAWhQxJH5uvl4qfohC24yPQadScgvaTZG3xZIZLO2c84HxilkmJCPP14e+K0hMvItzs/EIE5f7DTwPuKB31JEGo3QEZQSHNJIJPa5XlXT3d6qcXv1RNIrQew8=
+  - secure: nDiQN73QEcqurdyuaa66xrcZdZL3hey+E4R3Tc7fl3wP3Y+06355N9h1Nu0nn1DJg6ts/nfOpcxKrgMx86dVPj/nyckQ9poIQQuTE47ualYxJ0VQELHFD7bfscClMHcPhQuIEGL/bXXvVjoTheZ/tWd0B5YbpIQvDzrtFq+gpqs=
